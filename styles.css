@@ -43,7 +43,7 @@ body {
 .List-item-inline {
     list-style: none;
     display: inline;
-    padding: 0rem 0.6rem;
+    padding: 0rem 0rem;
     text-align: right;
 }
 
@@ -91,8 +91,4 @@ body {
     padding: 2rem;
     max-width: 600px;
     margin: auto;
-}
-
-.add {
-    margin: 2rem;
 }
