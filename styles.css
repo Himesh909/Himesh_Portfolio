@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root {
+    --primary-color: hsl(197, 93%, 38%);
+    --white: white;
+    --gray: rgb(128, 126, 126);
+    --light-gray: rgb(241, 241, 241);
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+}
+
+.name-link {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.primary-link {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.1rem 1rem;
+}
+
+.secondary-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+.List-item-inline {
+    list-style: none;
+    display: inline;
+    padding: 0rem 0.6rem;
+    text-align: right;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.nav-pills {
+    text-align: right;
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero .hero-img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero-heading {
+    font-size: 3rem;
+    color: var(--gray);
+}
+
+.section {
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.add {
+    margin: 2rem;
+}
