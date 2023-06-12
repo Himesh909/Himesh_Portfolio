@@ -10,6 +10,9 @@
 body {
     font-family: 'Work Sans', sans-serif;
     margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .name-link {
@@ -91,4 +94,8 @@ body {
     padding: 2rem;
     max-width: 600px;
     margin: auto;
+}
+
+.footer {
+    margin-top: auto;
 }
