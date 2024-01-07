@@ -113,7 +113,7 @@ body {
 
 .hero-heading {
   font-size: 3rem;
-  color: var(--gray);
+  color: var(--primary-color);
 }
 
 .hero p {
