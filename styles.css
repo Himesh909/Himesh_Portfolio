@@ -38,69 +38,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.name-link {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.lang-img {
-  height: 1.5rem;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  text-align: start;
-}
-
-.hero .hero-btn {
-  height: 30px;
-  display: flex;
-  gap: 1rem;
-}
-
-.hero section {
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.hero .para {
-  padding: 0;
-  margin: 0;
-  text-align: start;
-}
-
-.list {
-  height: 100%;
-  align-items: center;
-  display: flex;
-  gap: 1rem;
-  padding-bottom: 1rem;
-}
-
-.lang-img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
-.list span:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.footer-img {
-  height: 1.5rem;
-}
-
-.List-item-inline {
-  list-style: none;
-  display: inline;
-  padding: 0rem 0rem;
-  text-align: right;
-}
+/* Navigation */
 
 .navigation {
   background-color: var(--primary-color);
@@ -110,13 +48,37 @@ body {
   border-top-right-radius: 1rem;
 }
 
-.navigation .link {
-  color: white;
+.nav-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  visibility: hidden;
+}
+
+.name-link {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .nav-pills {
   text-align: right;
 }
+
+.list-item-inline {
+  list-style: none;
+  display: inline;
+  padding: 0rem 0.5rem 1rem;
+  text-align: right;
+}
+
+.navigation .link {
+  color: white;
+}
+
+/* Hero Tag */
 
 .hero {
   margin: 2rem;
@@ -144,15 +106,48 @@ body {
   transition: transform 0.3s ease;
 }
 
+.hero-div {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-heading {
   font-size: 3rem;
   color: var(--gray);
 }
 
+.hero p {
+  font-size: 1.1rem;
+  text-align: start;
+}
+
+.hero .hero-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero section {
+  padding: 0 3rem 3rem 2rem;
+}
+
+.hero .para {
+  padding: 0;
+  margin: 0;
+  text-align: start;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Section */
+
 .section {
   text-align: center;
   background-color: var(--light-gray);
 }
+
+/* Container */
 
 .container {
   text-align: start;
@@ -161,11 +156,43 @@ body {
   margin: auto;
 }
 
+.container-btn {
+  display: flex;
+}
+
+.list {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.lang-img {
+  height: 1.5rem;
+}
+
+.lang-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.list span:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Footer */
+
 .footer {
   margin-top: auto;
 }
 
-.pills {
+.footer-img {
+  height: 1.5rem;
+}
+
+.footer .pills {
   list-style: none;
   padding: 1rem;
   display: flex;
@@ -179,7 +206,48 @@ body {
   gap: 1rem;
 }
 
+/* Achievements */
+
+.ach-main {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 1rem 0;
+}
+
+.ach-main h1 {
+  text-align: center;
+}
+
+.ach-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ach-container img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.ach-section {
+  max-width: 300px;
+  margin: 0 1rem 0 1rem;
+  width: 70%;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px #00000021;
+}
+
+.ach-section h3 {
+  text-align: center;
+}
+
 @media all and (min-width: 768px) and (max-width: 1024px) {
+  .ach-section {
+    min-width: 340px;
+    max-width: 40%;
+    margin: 0 1rem 0 1rem;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
@@ -194,6 +262,11 @@ body {
   }
   .hero-heading {
     font-size: 10vw;
+  }
+  .ach-section {
+    max-width: 500px;
+    margin: 0 1rem 0 1rem;
+    width: 60%;
   }
 }
 
@@ -212,5 +285,25 @@ body {
   }
   .hero-btn {
     flex-direction: column;
+  }
+  .list-item-inline {
+    display: inline;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 0.5rem;
+  }
+  /* .menu {
+    visibility: visible;
+  }
+  .nav-pills {
+    visibility: hidden;
+  }
+  .top {
+    height: 60px;
+  } */
+  .ach-section {
+    max-width: 400px;
+    margin: 0 1rem 0 1rem;
+    width: 90%;
   }
 }
